@@ -25,11 +25,14 @@ class CommandService {
       if(osName.contains("dows")){
         val fileToDelete = s"Files\\${filename}"
         result = s"cmd /c del $fileToDelete"
-        println(s"Command to execute $result")
+        println(s"Executing Command $result")
         result = result.!!
       }
       else {
-          result = Seq("sh", "-c", s"rm Files/$filename").!!
+        val fileToDelete = s"Files\\${filename}"
+        result = s"sh -c rm $fileToDelete"
+        println(s"Executing Command $result")
+        result = result.!!
       } 
       // Return the resultcatch {
     } catch{

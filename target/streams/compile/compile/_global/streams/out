@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\thinkpad\Desktop\command-injection-offense\app\service\CommandService.scala:33:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Seq[String][0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m        result = Seq(s"sh -c rm $fileToDelete")[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
